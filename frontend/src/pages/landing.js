@@ -1,17 +1,30 @@
 import React from "react";
+import 'typeface-inter';
 
 import ActiveSlider from "./ActiveSlider";
 const Landing = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-[rgb(35,35,103)] via-[#1c1c47] to-[#000000] text-white flex flex-col items-center">
+    <div className="min-h-screen bg-[radial-gradient(ellipse_at_100%_0%,_#1a1a66_15%,_#000033_40%,_#000000)]
+
+
+
+
+ text-white flex flex-col items-center">
+
       {" "}
       {/* Header */}
-      <div className="w-full bg-[#1F1F1F] py-4 px-6 flex justify-between items-center shadow-md">
-        <h1 className="text-3xl font-bold text-white">WebGalaxy</h1>
-        <button className="px-6 py-3 bg-[#0049F3] hover:bg-blue-700 rounded-lg border-none text-white">
-          Your Profile
-        </button>
+      <div className="w-full h-[6.25rem] bg-[#1F1F1F] flex items-center px-6 md:px-10 shadow-md">
+        <h1 className="text-[1.875rem] md:text-[2rem] leading-[2.72rem] font-bold text-white  text-left" style={{ fontFamily: 'Inter', textUnderlinePosition: 'from-font', textDecorationSkipInk: 'none' }}>
+          WebGalaxy
+        </h1>
+        <div className="ml-auto">
+          <button className=" mt-1.7 px-[2.625rem] py-[0.625rem] bg-[#0049F3] hover:bg-blue-700 rounded-[0.5rem] text-white">
+            Your Profile
+          </button>
+        </div>
       </div>
+      
+
       {/* Hero Section */}
       <div className="relative w-full flex-grow flex flex-col items-center justify-center p-16 mt-3">
         {/* Hero Text */}
@@ -24,7 +37,7 @@ const Landing = () => {
           </p>
         </div>
 
-        <div className="flex items-center rounded-md p-2 mt-20 w-full max-w-3xl mx-auto border-white relative">
+        <div className="flex items-center rounded-md p-2 mt-20 w-full max-w-2xl mx-auto border-white relative">
           <input
             className="flex-1 px-4 py-5 bg-[#1F1F1F] text-white placeholder-[#B5B5B5] border border-[#B5B5B5] focus:outline-none rounded-lg pr-16 shadow-[0_0_2px_2px_rgba(181,181,181,0.2)]"
             placeholder="Provide your website name and describe it in a few words."
@@ -60,7 +73,7 @@ const Landing = () => {
 {/*       
       Templates Section */}
      <div className="mt-16 w-3/4">
-        <h3 className="text-lg text-left">or use our templates to start</h3>
+        <h3 className="text-lg text-left font-sans font-size-[5rem]">or use our templates to start</h3>
         {/* Use ActiveSlider Component Here */}
         <ActiveSlider />
       </div>
@@ -70,21 +83,3 @@ const Landing = () => {
 
 export default Landing;
 
-
-// <div class="mt-16 w-3/4">
-//         <h3 class="text-lg text-left">or use our templates to start</h3>
-//         <div class="grid grid-cols-3 gap-4 mt-4">
-//           {/* Template Boxes */}
-//           {Array(6)
-//             .fill("")
-//             .map((_, index) => (
-//               <div
-//                 key={index}
-//                 className={`bg-gray-300 h-32 rounded-lg flex items-center justify-center m-5 opacity-0 transform translate-y-10 animate-slide-up`}
-//                 style={{ animationDelay: `${index * 200}ms` }}
-//               >
-//                 {index + 1}
-//               </div>
-//             ))}
-//         </div>
-//       </div>
