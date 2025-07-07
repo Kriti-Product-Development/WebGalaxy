@@ -69,14 +69,34 @@ Before installing and running the application, ensure you have the following ins
    git clone https://github.com/Kriti-Product-Development/WebGalaxy.git
    cd frontend
    ```
-2. **Install dependencies:**
+2. **Install Python dependencies:**
    ```bash
-   npm install
+   cd backend
+   pip install flask flask-cors python-dotenv requests beautifulsoup4 Pillow matplotlib google-generativeai sentence-transformers torch gitpython
    ```
-3. **Start the application:**
+3. **Install frontend dependencies:**
    ```bash
+   cd ../frontend
+   npm install
+4. **Obtain and configure your API keys:**
+    Create a .env (or product_development.env) file in the backend3 folder and add your keys, for example:
+   ```bash
+   GEMINI_API_KEY_1=your_key_here
+   GEMINI_API_KEY_2=your_key_here
+   GEMINI_API_KEY_3=your_key_here
+   UNSPLASH_API_KEY=your_key_here
+ 
+5. **Start the application:**
+   – Frontend:
+   ```bash
+   #from frontend folder
    npm start
    ```
+   – Backend (Flask API + AI model):
+   ```bash
+   # from backend folder in a new terminal
+   python app.py
+
 
 ### Usage
 1. Open the application in a web browser.
