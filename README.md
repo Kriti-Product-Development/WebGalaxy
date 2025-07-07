@@ -87,6 +87,7 @@ Before installing and running the application, ensure you have the following ins
    UNSPLASH_API_KEY=your_key_here
  
 5. **Start the application:**
+
    – Frontend:
    ```bash
    #from frontend folder
