@@ -67,7 +67,7 @@ Before installing and running the application, ensure you have the following ins
 1. **Clone the repository:**
    ```bash
    git clone https://github.com/Kriti-Product-Development/WebGalaxy.git
-   cd frontend
+   cd WebGalaxy
    ```
 2. **Install Python dependencies:**
    ```bash
@@ -172,7 +172,7 @@ To generate a fresh requirements.txt file from an existing environment:
   
 
 ### Environment Setup
-Create a `.env` file or use `product_development.env`:
+Create a `.env` file in the backend3 folder or use `product_development.env`:
 ```env
 GEMINI_API_KEY_1=your_key_here
 GEMINI_API_KEY_2=your_key_here
@@ -189,15 +189,10 @@ load_dotenv("product_development.env")
 #### 1. 
 To generate a website based on user input, run:
 ```bash
+cd backend3
 python website_generator_model1.py
 ```
 Then, enter the prompt specifying the website you want to generate. The generated website will be stored in the generated folder.
-#### 2. Website Regeneration
-For regenerating templates with an alternative match:
-```bash
-python update_regenerate.py
-```
-Here, the user will enter the prompt either to regenerate the whole website or update specific sections based on the prompt. The updated website will be saved in the generated folder, where the user can run and check the modifications.
 
 ---
 
